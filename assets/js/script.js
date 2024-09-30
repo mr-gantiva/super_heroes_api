@@ -79,20 +79,15 @@ $(document).ready(function () {
             title: {
               text: `Estadisticas de Poder para ${datos.name}`,
             },
-            // axisX: {
-            //   title: "Fecha",
-            //   titleFontSize: 12,
-            // },
-            // axisY: {
-            //   title: datos.powerstats[stat],
-            //   titleFontSize: 12,
-            // },
+
             data: [
               {
                 // Change type to "bar", "area", "spline", "pie",etc.
                 type: "pie",
                 dataPoints: dataPoints,
                 showInLegend: "true",
+                indexLabelFontSize: 16,
+                indexLabel: "{label} - {y}%",
               },
             ],
           });
