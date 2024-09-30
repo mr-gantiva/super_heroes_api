@@ -92,6 +92,7 @@ $(document).ready(function () {
                 // Change type to "bar", "area", "spline", "pie",etc.
                 type: "pie",
                 dataPoints: dataPoints,
+                showInLegend: "true",
               },
             ],
           });
