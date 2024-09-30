@@ -7,7 +7,8 @@ $(document).ready(function () {
   // Capturar valor ingresado
   $("#btnBuscar").click(function () {
     // Capturar el valor del input
-    let valorInput = parseInt($("#buscarHeroe").val());
+    let valorInput = parseInt($("#buscarHeroe").val().trim());
+
     console.log(valorInput);
 
     // Limpiar el input después de obtener su valor
@@ -33,12 +34,12 @@ $(document).ready(function () {
         // console.log(datos.image);
 
         let card = `
-             <div class="col-6">
-                <div class="left__card row">
-                    <div class="col-6">
+             <div class="col-12 col-md-6">
+                <div class="left__card row mb-5">
+                    <div class="col-12 col-md-6">
                         <img src="${datos.image.url}" alt="" class="w-100">
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h5 class="card-title py-2 hero-text">Nombre: ${datos.name}</h5>
                         <p class= "hero-text">Publicado por: <span class="hero-text-2" id="tag-placeholder">${datos.biography.publisher}</span></p>
                         <hr>
@@ -55,7 +56,7 @@ $(document).ready(function () {
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <!--Sección gráficos-->
                 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
             </div>
@@ -104,6 +105,4 @@ $(document).ready(function () {
       },
     });
   });
-
-  // Crear el gráfico
 });
