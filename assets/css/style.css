@@ -1,0 +1,51 @@
+@font-face {
+  font-family: comic;
+  src: url(../fonts/Comic-Hero.otf);
+}
+
+@font-face {
+  font-family: comic2;
+  src: url(../fonts/BadComic-Regular.ttf);
+}
+
+:is(p, span, h5, label) {
+  color: #fff;
+}
+
+body {
+  /* font-family: comic; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #202b38;
+}
+
+.left__card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 10px;
+}
+.navbar {
+  border-bottom: 1px solid #cdcdcd;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-text {
+  font-family: comic;
+  color: #ffcc00; /* Color de la fuente */
+  text-shadow: 2px 2px 0 #000000,
+    /* Sombra inferior izquierda en negro */ -2px -2px 0 #000000,
+    /* Sombra superior derecha en rojo */ 2px -2px 0 #000000,
+    /* Sombra superior izquierda en verde */ -2px 2px 0 #000000; /* Sombra inferior derecha en azul */
+}
+
+.hero-text-2 {
+  font-family: comic2;
+}
