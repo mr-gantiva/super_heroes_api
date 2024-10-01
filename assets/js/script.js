@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${apiKey}/${heroId}`,
+      url: `https://superheroapi.com/api.php/${apiKey}/${heroId}`,
 
       dataType: "json",
       success: function (datos) {
